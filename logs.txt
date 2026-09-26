@@ -1,0 +1,40 @@
+   61  rm test.txt
+   62  ls -a
+   63  cd ..
+   64  mkdir newDir
+   65  ls -a
+   66  rmdir newDir
+   67  ls -a
+   68  tar -cf archivedir.tar ~/testDir/
+   69  tar -cf archivedir.tar ~/testDir
+   70  ls -a
+   71  nano test.txt
+   72  cat test.txt
+   73  uniq test.txt
+   74  clear
+   75  ls -a
+   76  head test.txt
+   77  clear
+   78  nano test.txt
+   79  uniq
+   80  clear
+   81  head test.txt
+   82  cat test.txt
+   83  clear
+   84  tail test.txt
+   85  uniq test.txt
+   86  host google.com
+   87  ping ec2
+   88  ping
+   89  ping ec2
+   90  ping ec2-3-138-86-231.us-east-2.compute.amazonaws.com 
+   91  top
+   92  clear
+   93  git config user.name "CDauph"
+   94  git config --global user.name "Cdauph"
+   95  git config --global user.email "cdauph3@gmail.com"
+   96  git config --global credential.helper store
+   97  git clone https://github.com/CDauph/DistributedComputing_C00510239
+   98  cd DistributedComputing_C00510239
+   99  git checkout -b dev
+  100  history | tail -n 40 > logs.txt
