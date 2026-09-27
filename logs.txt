@@ -1,40 +1,252 @@
-   61  rm test.txt
-   62  ls -a
-   63  cd ..
-   64  mkdir newDir
-   65  ls -a
-   66  rmdir newDir
-   67  ls -a
-   68  tar -cf archivedir.tar ~/testDir/
-   69  tar -cf archivedir.tar ~/testDir
-   70  ls -a
-   71  nano test.txt
-   72  cat test.txt
-   73  uniq test.txt
-   74  clear
-   75  ls -a
-   76  head test.txt
-   77  clear
-   78  nano test.txt
-   79  uniq
-   80  clear
-   81  head test.txt
-   82  cat test.txt
-   83  clear
-   84  tail test.txt
-   85  uniq test.txt
-   86  host google.com
-   87  ping ec2
-   88  ping
-   89  ping ec2
-   90  ping ec2-3-138-86-231.us-east-2.compute.amazonaws.com 
-   91  top
-   92  clear
-   93  git config user.name "CDauph"
-   94  git config --global user.name "Cdauph"
-   95  git config --global user.email "cdauph3@gmail.com"
-   96  git config --global credential.helper store
-   97  git clone https://github.com/CDauph/DistributedComputing_C00510239
-   98  cd DistributedComputing_C00510239
-   99  git checkout -b dev
-  100  history | tail -n 40 > logs.txt
+Script started on 2026-09-27 18:46:43+00:00 [TERM="tmux-256color" TTY="/dev/pts/1" COLUMNS="79" LINES="45"]
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~/DistributedComputing_C00510239[00m$ man man
+[?2004lman: can't resolve man7/groff_man.7
+[?1049h[45;1H[?1h=[4mMAN[24m(1)                        Manual pager utils                        [4mMAN[24m(1)[m
+[m
+[1mNAME[0m[m
+       man - an interface to the system reference manuals[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mman [22m[[4mman[24m [4moptions[24m] [[[4msection[24m] [4mpage[24m ...] ...[m
+       [1mman -k [22m[[4mapropos[24m [4moptions[24m] [4mregexp[24m ...[m
+       [1mman -K [22m[[4mman[24m [4moptions[24m] [[4msection[24m] [4mterm[24m ...[m
+       [1mman -f [22m[[4mwhatis[24m [4moptions[24m] [4mpage[24m ...[m
+       [1mman -l [22m[[4mman[24m [4moptions[24m] [4mfile[24m ...[m
+       [1mman -w[22m|[1m-W [22m[[4mman[24m [4moptions[24m] [4mpage[24m ...[m
+[m
+[1mDESCRIPTION[0m[m
+       [1mman  [22mis  the system's manual pager.  Each [4mpage[24m argument given to [1mman [22mis[m
+       normally the name of a program, utility or function.  The  [4mmanual[24m  [4mpage[0m[m
+       associated with each of these arguments is then found and displayed.  A[m
+       [4msection[24m,  if  provided, will direct [1mman [22mto look only in that [4msection[24m of[m
+       the manual.  The default action is to search in all  of  the  available[m
+       [4msections[24m following a pre-defined order (see [1mDEFAULTS[22m), and to show only[m
+       the first [4mpage[24m found, even if [4mpage[24m exists in several [4msections[24m.[m
+[m
+       The table below shows the [4msection[24m numbers of the manual followed by the[m
+       types of pages they contain.[m
+[m
+       1   Executable programs or shell commands[m
+       2   System calls (functions provided by the kernel)[m
+       3   Library calls (functions within program libraries)[m
+       4   Special files (usually found in [4m/dev[24m)[m
+       5   File formats and conventions, e.g. [4m/etc/passwd[0m[m
+       6   Games[m
+       7   Miscellaneous  (including  macro  packages  and  conventions), e.g.[m
+           [1mman[22m(7), [1mgroff[22m(7), [1mman-pages[22m(7)[m
+       8   System administration commands (usually only for root)[m
+       9   Kernel routines [Non standard][m
+[m
+       A manual [4mpage[24m consists of several sections.[m
+[m
+       Conventional section names include [1mNAME[22m, [1mSYNOPSIS[22m,  [1mCONFIGURATION[22m,  [1mDE‐[0m[m
+       [1mSCRIPTION[22m,  [1mOPTIONS[22m,  [1mEXIT STATUS[22m,  [1mRETURN VALUE[22m,  [1mERRORS[22m, [1mENVIRONMENT[22m,[m
+       [1mFILES[22m,  [1mVERSIONS[22m,  [1mSTANDARDS[22m,  [1mNOTES[22m,  [1mBUGS[22m,  [1mEXAMPLE[22m,   [1mAUTHORS[22m,   and[m
+       [1mSEE ALSO[22m.[m
+[m
+       The following conventions apply to the [1mSYNOPSIS [22msection and can be used[m
+[7m Manual page man(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~/DistributedComputing_C00510239[00m$ ls -a
+[?2004l[0m[01;34m.[0m  [01;34m..[0m  [01;34m.git[0m  [01;34mDistributedComputing_C00510239[0m  logs.txt
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~/DistributedComputing_C00510239[00m$ cd /[K..
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ ls -a
+[?2004l[0m[01;34m.[0m              .bash_logout  .git-credentials  .profile
+[01;34m..[0m             .bashrc       .gitconfig        [01;34m.ssh[0m
+[01;34m.aws[0m           [01;34m.cache[0m        .lesshst          [01;34mDistributedComputing_C00510239[0m
+.bash_history  [01;34m.config[0m       [01;34m.local[0m
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ touch test.txt
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ mkdir[K[K[KDir testDir[K[K[K[K[K[K[K[K[K[K[K[K[K;s[K[Kls -a
+[?2004l[0m[01;34m.[0m              .bash_logout  .git-credentials  .profile
+[01;34m..[0m             .bashrc       .gitconfig        [01;34m.ssh[0m
+[01;34m.aws[0m           [01;34m.cache[0m        .lesshst          [01;34mDistributedComputing_C00510239[0m
+.bash_history  [01;34m.config[0m       [01;34m.local[0m            test.txt
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ mkDir testDir
+[?2004lCommand 'mkDir' not found, did you mean:
+  command 'mkdir' from deb coreutils-from-gnu (0.0.0~ubuntu25)
+  command 'mkdir' from deb coreutils-from-uutils (0.0.0~ubuntu25)
+  command 'mkdir' from deb coreutils-from-busybox (0.0.0~ubuntu25)
+  command 'mkdir' from deb coreutils-from-toybox (0.0.0~ubuntu25)
+Try: sudo apt install <deb name>
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ mkdir testDir
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ ls -a
+[?2004l[0m[01;34m.[0m              .bashrc           .lesshst                        test.txt
+[01;34m..[0m             [01;34m.cache[0m            [01;34m.local[0m                          [01;34mtestDir[0m
+[01;34m.aws[0m           [01;34m.config[0m           .profile
+.bash_history  .git-credentials  [01;34m.ssh[0m
+.bash_logout   .gitconfig        [01;34mDistributedComputing_C00510239[0m
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ cp ~/test.txt ~/testDir
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ cd Test[K[K[K[KtestDir
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~/testDir[00m$ ls -a
+[?2004l[0m[01;34m.[0m  [01;34m..[0m  test.txt
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~/testDir[00m$ cd ..
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ touch newfile.txt
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ mv ~new[K[K[K[K[K[K[Kl;s[K[Ks 
+[?2004l[0m[01;34mDistributedComputing_C00510239[0m  newfile.txt  test.txt  [01;34mtestDir[0m
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ mv ~/newfile.tt[Kxt ~/testDir/
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ clear
+[?2004l[H[J[3J[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ pwd
+[?2004l/home/ubuntu
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ d[Kcd testDir
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~/testDir[00m$ c[Kpwd
+[?2004l/home/ubuntu/testDir
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~/testDir[00m$ ls -[K
+[?2004lnewfile.txt  test.txt
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~/testDir[00m$ rm test.txt
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~/testDir[00m$ cd ..
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ makedir newDir
+[?2004lCommand 'makedir' not found, did you mean:
+  command 'makedic' from deb makedic (6.5deb2-13.2)
+Try: sudo apt install <deb name>
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ mkdir newDir
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDistributedComputing_C00510239[0m  [01;34mnewDir[0m  test.txt  [01;34mtestDir[0m
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ rmDir[K[K[Kdir newDir
+[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ tar p[K-cf archt[Kivedir.tar ~/testDir
+[?2004ltar: Removing leading `/' from member names
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ ls
+[?2004l[0m[01;34mDistributedComputing_C00510239[0m  [01;31marchivedir.tar[0m  test.txt  [01;34mtestDir[0m
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ nano test.txt
+[?2004l[?2004h(B)0[?1049h[1;45r[m[4l[39;49m[?1h=[?1h=[?25l[39;49m[m[H[J[43;33H[0;7m[ Reading... ][m[43;32H[0;7m[ Read 0 lines ][m[H[0;7m  GNU nano 8.7.1                       test.txt                                [1;78H[m[44d[0;7m^G[m Help[44;16H[0;7m^O[m Write Out   [0;7m^F[m Where Is    [0;7m^K[m Cut[44;61H[0;7m^T[m Execute[45d[0;7m^X[m Exit[45;16H[0;7m^R[m Read File   [0;7m^\[m Replace     [0;7m^U[m Paste[61G[0;7m^J[m Justify[2d[34h[?25h[?25l[1;49H[0;7m*[78G[m[34h[?25h[2dG[?25l[34h[?25he[?25l[34h[?25hn[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25h [?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hn[?25l[34h[?25hd[?25l[34h[?25ho[?25l[34h[?25hm[?25l[34h[?25h [?25l[34h[?25hp[?25l[43d[K[34h[?25h[2;20Ha[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hg[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hh[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25hc[?25l[34h[?25ha[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25hb[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ha[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25he[?25l[34h[?25hx[?25l[34h[?25hc[?25l[34h[?25he[?25l[34h[?25hl[?25l[34h[?25hl[?25l[34h[?25he[?25l[34h[?25hn[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25ha[?25l[34h[?25hy[?25l[34h[?25h [?25l[34h[?25hf[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25hr[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25h [?25l[34h[?25hg[?25l[34h[?25he[?25l[34h[?25ht[?25l[3d[34h[?25h[?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25hi[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25hc[?25l[34h[?25hr[?25l[34h[?25he[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25hv[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hf[?25l[34h[?25hl[?25l[34h[?25ho[?25l[34h[?25hw[?25l[34h[?25h [?25l[34h[?25hg[?25l[34h[?25ho[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25h [?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hb[?25l[34h[?25he[?25l[34h[?25hg[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hn[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hg[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hf[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hd[?25l[34h[?25ha[?25l[34h[?25hy[?25l[34h[?25h.[?25l[34h[?25h [?25l[34h[?25hT[?25l[34h[?25hh[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25hr[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25hr[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25hh[?25l[34h[?25ha[?25l[34h[?25hs[?25l[34h[?25h [?25l[4d[34h[?25h[?25l[3;71H[34h[?25h[?25l[34h[?25hn[?25l[34h[?25ho[?25l[4d[34h[?25h[?25l[34h[?25hi[?25l[34h[?25hd[?25l[34h[?25he[?25l[34h[?25ha[?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25hh[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25hp[?25l[34h[?25hi[?25l[34h[?25hc[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hn[?25l[34h[?25hd[?25l[34h[?25ho[?25l[34h[?25hm[?25l[34h[?25h [?25l[34h[?25hp[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hg[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hh[?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25hi[?25l[34h[?25hl[?25l[34h[?25hl[?25l[34h[?25h [?25l[34h[?25hb[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ha[?25l[34h[?25hb[?25l[34h[?25ho[?25l[34h[?25hu[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25hh[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25he[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hp[?25l[34h[?25he[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25hs[?25l[34h[?25h.[?25l[5d[34h[?25h[?25l[34h[?25hT[?25l[34h[?25hh[?25l[34h[?25hi[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25hf[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25hc[?25l[34h[?25he[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hr[?25l[34h[?25hw[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25hr[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25h [?25l[34h[?25hu[?25l[34h[?25hs[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hc[?25l[34h[?25hr[?25l[34h[?25he[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25hv[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25hy[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25h [?25l[34h[?25hc[?25l[34h[?25ho[?25l[34h[?25hm[?25l[34h[?25hp[?25l[34h[?25hl[?25l[34h[?25he[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hn[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hf[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25hr[?25l[34h[?25he[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hc[?25l[34h[?25ho[?25l[34h[?25hm[?25l[34h[?25hm[?25l[34h[?25ho[?25l[34h[?25hn[?25l[6d[34h[?25h[?25l[34h[?25hw[?25l[34h[?25hr[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25h [?25l[34h[?25hc[?25l[34h[?25hh[?25l[34h[?25ha[?25l[34h[?25hl[?25l[34h[?25hl[?25l[34h[?25he[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25he[?25l[34h[?25hs[?25l[34h[?25h.[?25l[34h[?25h [?25l[34h[?25hT[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25hr[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25hc[?25l[34h[?25ha[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25hu[?25l[34h[?25hs[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hp[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hg[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hh[?25l[34h[?25h [?25l[34h[?25ha[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hf[?25l[34h[?25hi[?25l[34h[?25hr[?25l[34h[?25hs[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hn[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25hh[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25h[0;7m<[mort s[K[?25l[34h[?25hwriting challenges. The writer can use the paragraph as the first one short [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[7d[34h[?25h[?25l[34h[?25hs[?25l[34h[?25hh[?25l[34h[?25ho[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[K[?25l[6;70H[34h[?25h[?25l[34h[?25h [?25l[7d[34h[?25h[?25l[34h[?25hs[?25l[34h[?25hh[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25hy[?25l[34h[?25h [?25l[34h[?25ha[?25l[34h[?25hn[?25l[34h[?25hd[?25l[34h[?25h [?25l[34h[?25hb[?25l[34h[?25hu[?25l[34h[?25hi[?25l[34h[?25hl[?25l[34h[?25hd[?25l[34h[?25h [?25l[34h[?25hu[?25l[34h[?25hp[?25l[34h[?25ho[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25h.[?25l[34h[?25h [?25l[34h[?25hA[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25he[?25l[34h[?25hc[?25l[34h[?25ho[?25l[34h[?25hn[?25l[34h[?25hd[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hp[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25ho[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25h [?25l[34h[?25hu[?25l[34h[?25hs[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hn[?25l[34h[?25hd[?25l[34h[?25ho[?25l[34h[?25hm[?25l[8d[34h[?25h[?25l[34h[?25hp[?25l[34h[?25h[K[?25l[34h[?25h [?25l[9d[34h[?25h[?25l[34h[?25ha[?25l[34h[?25h[K[?25lM [34h[?25h[?25l[34h[?25h[?25l[34h[?25hp[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hg[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hh[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25ho[?25l[34h[?25hm[?25l[34h[?25he[?25l[34h[?25hw[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25ha[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[K[?25l[7;68H[34h[?25h[?25l[34h[?25h [?25l[8d[34h[?25h[?25l[34h[?25hp[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hg[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hh[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25ho[?25l[34h[?25hm[?25l[34h[?25he[?25l[34h[?25hw[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25he [?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25ha[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25hh[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25hy[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25hy[?25l[34h[?25h [?25l[34h[?25hv[?25l[34h[?25h [?25l[34h[?25hc[?25l[34h[?25hr[?25l[34h[?25he[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25h.[?25l[34h[?25h [?25l[34h[?25hT[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hr[?25l[34h[?25hd[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hp[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25ho[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25hh[?25l[34h[?25ha[?25l[34h[?25hv[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25h[0;7m<[mve th[K[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hn[?25l[34h[?25hd[?25l[34h[?25ho[?25l[34h[?25hm[?25l[34h[?25h [?25l[34h[?25hp[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hg[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hh[?25l[34h[?25h [?25l[34h[?25hb[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25he[?25l[34h[?25hn[?25l[34h[?25hd[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25h [?25l[34h[?25hp[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25hg[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hh[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25ha[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25hh[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25hy[?25l[34h[?25h.[?25l[34h[?25h [?25l[34h[?25hN[?25l[34h[?25ho[?25l[34h[?25h [?25l[34h[?25hm[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hr[?25lparagraph somewhere in a short story they create. The third option is have the[0;7m>[9;1H[m[34h[?25h[?25l[34h[?25hw[?25l[34h[?25hj[?25l[34h[?25hi[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[K[?25lM[0;7m<[mve the random paragraph be the ending paragraph in a short story. No matter   [8;77H[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25lparagraph somewhere in a short story they create. The third option is have the[0;7m>[9;1H[m[34h[?25h[?25l[34h[?25hm[?25l[34h[?25ha[?25l[34h[?25h [?25l[34h[?25h[K[?25lM[0;7m<[mve the random paragraph be the ending paragraph in a short story. No[K [34h[?25h[?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25hparagraph somewhere in a short story they create. The third option is have t[?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25hh[?25l[34h[?25ha[?25l[34h[?25hv[?25l[34h[?25he[?25l[34h[?25h [?25l[9d[34h[?25h[?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hn[?25l[34h[?25hd[?25l[34h[?25ho[?25l[34h[?25hm[?25l[34h[?25h [?25l[34h[?25hp[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hg[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hh[?25l[34h[?25h [?25l[34h[?25hb[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25he[?25l[34h[?25hn[?25l[34h[?25hd[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25h [?25l[34h[?25hp[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hg[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hh[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25ha[?25l[34h[?25h [?25l[34h[?25hd[?25l[34h[?25hh[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25hh[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25hs[?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25hy[?25l[34h[?25h.[?25l[34h[?25h [?25l[34h[?25hN[?25l[34h[?25ho[?25l[34h[?25h [?25l[34h[?25hm[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25h [?25l[10d[34h[?25h[?25l[34h[?25hw[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hc[?25l[34h[?25hh[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hf[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25hs[?25l[34h[?25he [?25l[34h[?25hc[?25l[34h[?25hh[?25l[34h[?25ha[?25l[34h[?25hl[?25l[34h[?25hl[?25l[34h[?25he[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25he[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25hu[?25l[34h[?25hn[?25l[34h[?25hd[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25ht[?25l[34h[?25ha[?25l[34h[?25hk[?25l[34h[?25he[?25l[34h[?25hn[?25l[34h[?25h,[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25hr[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25hf[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25hc[?25l[34h[?25he[?25l[34h[?25hd[?25l[34h[?25h [?25l[34h[?25hc[?25l[34h[?25hr[?25l[34h[?25he[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25hv[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25hy[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25h [?25l[34h[?25hu[?25l[34h[?25hs[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hc[?25l[34h[?25hr[?25l[34h[?25he[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25hv[?25l[34h[?25h[0;7m<[mativi[K[?25l[34h[?25ht[?25l[34h[?25hy[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25hwhich of these challenges is undertaken, the writer is forced to use creativ[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h [?25l[11d[34h[?25h[?25l[34h[?25hc[?25l[34h[?25hr[?25l[34h[?25he[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25hb[?25l[34h[?25hi[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25hv[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25hy[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hc[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25hp[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hp[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hr[?25l[34h[?25h [?25l[34h[?25hg[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25hp[?25l[34h[?25hh[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25ht[?25l[34h[?25ho[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hw[?25l[34h[?25hr[?25l[34h[?25hi[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25h.[?25l[12d[34h[?25h[?25l[13d[34h[?25h[?25l[34h[?25hE[?25l[34h[?25hx[?25l[34h[?25ht[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25h [?25l[34h[?25hl[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25he[?25l[34h[?25hs[?25l[14d[34h[?25h[?25l[15d[34h[?25h[?25l[34h[?25he[?25l[34h[?25h[K[?25l[34h[?25hE[?25l[34h[?25hx[?25l[34h[?25ht[?25l[34h[?25hr[?25l[34h[?25ha[?25l[34h[?25h [?25l[34h[?25hL[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25he[?25l[34h[?25hs[?25l[34h[?25h[16d[?25l[34h[?25h[?25l[34h[?25h[?25l[34h[?25h[?25l[34h[?25h[?25l[34h[?25h[?25l[17d[34h[?25h[?25l[18d[34h[?25h[?25l[34h[?25hW[?25l[34h[?25hh[?25l[34h[?25ha[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25hi[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25hi[?25l[34h[?25hs[?25l[19d[34h[?25h[?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hs[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25hi[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hu[?25l[34h[?25ht[?25l[34h[?25h.[?25l[34h[?25h [?25l[20d[34h[?25h[?25l[34h[?25hN[?25l[34h[?25ho[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hs[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25hi[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hu[?25l[34h[?25ht[?25l[21d[34h[?25h[?25l[34h[?25hn[?25l[34h[?25ho[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25h[K[?25l[34h[?25hN[?25l[34h[?25ho[?25l[34h[?25ht[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25he[?25l[34h[?25hs[?25l[34h[?25ht[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25hg[?25l[34h[?25h [?25l[34h[?25ht[?25l[34h[?25hh[?25l[34h[?25hi[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hu[?25l[34h[?25ht[?25l[22d[34h[?25h[?25l[23d[34h[?25h[?25l[34h[?25hS[?25l[34h[?25ho[?25l[34h[?25hm[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hm[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hl[?25l[34h[?25hi[?25l[34h[?25hn[?25l[34h[?25he[?25l[34h[?25hs[?25l[24d[34h[?25h[?25l[25d[34h[?25h[?25l[34h[?25h1[?25l[34h[?25h2[?25l[34h[?25h3[?25l[34h[?25h [?25l[34h[?25hE[?25l[34h[?25hy[?25l[34h[?25he[?25l[34h[?25hs[?25l[34h[?25h [?25l[34h[?25ho[?25l[34h[?25hn[?25l[34h[?25h [?25l[34h[?25hm[?25l[34h[?25he[?25l[26d[34h[?25h[?25l[27d[34h[?25h[?25l[34h[?25hR[?25l[34h[?25he[?25l[34h[?25ha[?25l[34h[?25hd[?25l[34h[?25h [?25l[34h[?25hb[?25l[34h[?25ho[?25l[34h[?25ho[?25l[34h[?25hk[?25l[34h[?25hs[?25l[34h[?25h.[?25l[34h[?25hc[?25l[34h[?25ho[?25l[34h[?25hm[?25l[34h[?25h [?25l[34h[?25he[?25l[34h[?25ht[?25l[34h[?25hc[?25l[34h[?25h.[?25l[34h[?25h [?25l[34h[?25he[?25l[34h[?25ht[?25l[34h[?25hc[?25l[34h[?25h.[?25l[28d[34h[?25h[?25l[34h[?25hW[?25l[34h[?25hO[?25l[34h[?25hW[?25l[29d[34h[?25h[?25l[30d[34h[?25h[?25l[34h[?25hH[?25l[34h[?25he[?25l[34h[?25hl[?25l[34h[?25hl[?25l[34h[?25ho[?25l[34h[?25he[?25l[34h[?25h [?25l[34h[?25hW[?25l[34h[?25h [?25l[34h[?25h[?25l[34h[?25h [?25l[34h[?25h [?25l[34h[?25hW[?25l[34h[?25ho[?25l[34h[?25hr[?25l[34h[?25hl[?25l[34h[?25hd[?25l[34h[?25h![?25l[44;16H[0;7mM-D[m DOS Format [0;7mM-A[m Append     [0;7mM-B[m Backup File[0;7m^T[m Browse[K[45;2H[0;7mC[m Cancel[16G[0;7mM-M[m Mac Format [0;7mM-P[m Prepend    [0;7m^Q[m Discard buffer[K[44;70HM[0;7mWrite to File: test.txt                                                        [43;24H[m[34h[?25h[?25l[43;32H[1K [0;7m[ Writing... ][m[K[1;49H[0;7m [78G[m[43;31H[0;7m[ Wrote 29 lines ][m[44;16H[0;7m^O[m Write Out   [0;7m^F[m Where Is    [0;7m^K[m Cut         [0;7m^T[m Execute[45;2H[0;7mX[m Exit  [16G[0;7m^R[m Read File   [0;7m^\[m Replace     [0;7m^U[m Paste       [0;7m^J[m Justify[34h[?25h[30;13H[?25l[43d[J[45d[34h[?25h[45;1H[?1049l[?1l>[?2004l[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ cat test.txt
+[?2004lGenerating random paragraphs can be an excellent way for writter to get
+their creative flow going at the beginning of the day. The writer has no
+idea what topic the random paragraph will be about when it appears.
+This forces the writer to use the creativity to complete one of three common
+writing challenges. The writer can use the paragraph as the first one 
+short story and build upon it. A second option is to use the random 
+paragraph somewhere in a short story they create. The third option is have 
+the random paragraph be the ending paragraph  in a short story. No matter 
+which of these challenges is undertaken, the writer is forced to use 
+creativity to incorporate the paragraph into the writing.
+
+Extra lines
+
+Extra Lines
+
+
+What is this
+testing this out. 
+Not testing this out
+Not testing this out
+
+Some more lines
+
+123 Eyes on me
+
+Read books.com etc. etc.
+WOW
+
+Hello World!
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ head test.txt
+[?2004lGenerating random paragraphs can be an excellent way for writter to get
+their creative flow going at the beginning of the day. The writer has no
+idea what topic the random paragraph will be about when it appears.
+This forces the writer to use the creativity to complete one of three common
+writing challenges. The writer can use the paragraph as the first one 
+short story and build upon it. A second option is to use the random 
+paragraph somewhere in a short story they create. The third option is have 
+the random paragraph be the ending paragraph  in a short story. No matter 
+which of these challenges is undertaken, the writer is forced to use 
+creativity to incorporate the paragraph into the writing.
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ tail test.txt
+[?2004lNot testing this out
+
+Some more lines
+
+123 Eyes on me
+
+Read books.com etc. etc.
+WOW
+
+Hello World!
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ uniq test.txt
+[?2004lGenerating random paragraphs can be an excellent way for writter to get
+their creative flow going at the beginning of the day. The writer has no
+idea what topic the random paragraph will be about when it appears.
+This forces the writer to use the creativity to complete one of three common
+writing challenges. The writer can use the paragraph as the first one 
+short story and build upon it. A second option is to use the random 
+paragraph somewhere in a short story they create. The third option is have 
+the random paragraph be the ending paragraph  in a short story. No matter 
+which of these challenges is undertaken, the writer is forced to use 
+creativity to incorporate the paragraph into the writing.
+
+Extra lines
+
+Extra Lines
+
+What is this
+testing this out. 
+Not testing this out
+
+Some more lines
+
+123 Eyes on me
+
+Read books.com etc. etc.
+WOW
+
+Hello World!
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ uniq test.txttail[C[C[C[C[C[C[C[C[Chead[C[C[C[C[C[C[C[C[C[1Pcat[C[C[C[C[C[C[C[C[C[1@nano[C[C[C[C[C[C[C[C[Cls[Ktar -cf archivedir.tar ~/testDir[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[20Prmdir new[C[C[Cls[Kmkdir newDir[2@ake[C[C[C[C[C[C[C[C[C[C[9Pcd ..rm test.txtls [Kpwdcd testDirpwd[Kclearmv ~/newfile.txt ~/testDir/ls [Kmv ~/newfile.txt ~/testDir/clear[K[2Ppwdcd testDirpwd[Kls rm test.txt[6Pcd ..makedir newDir[2Pk[C[C[C[C[C[C[C[C[C[Cls[Krmdir newDir[20@tar -cf archivedir.tar ~/test[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cls[Knano test.txt[1Pcat[C[C[C[C[C[C[C[C[C[1@head[C[C[C[C[C[C[C[C[Ctail[C[C[C[C[C[C[C[C[Cuniq[C[C[C[C[C[C[C[C[C[Khost google.com
+[?2004lgoogle.com has address 142.251.210.206
+google.com has IPv6 address 2607:f8b0:4009:816::200e
+google.com mail is handled by 10 smtp.google.com.
+google.com has HTTP service bindings 1 . alpn="h2,h3"
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ ping ec2-3-138-86-231.us-east-2.computer.[K[K.ana[K[Kmaazonaws.co m
+[?2004lPING ec2-3-138-86-231.us-east-2.compute.amaazonaws.com (3.33.139.32) 56(84) bytes of data.
+64 bytes from aeedc42b70c898c66.awsglobalaccelerator.com (3.33.139.32): icmp_seq=1 ttl=249 time=7.64 ms
+64 bytes from aeedc42b70c898c66.awsglobalaccelerator.com (3.33.139.32): icmp_seq=2 ttl=249 time=7.72 ms
+64 bytes from aeedc42b70c898c66.awsglobalaccelerator.com (3.33.139.32): icmp_seq=3 ttl=249 time=7.66 ms
+64 bytes from aeedc42b70c898c66.awsglobalaccelerator.com (3.33.139.32): icmp_seq=4 ttl=249 time=7.68 ms
+^C
+--- ec2-3-138-86-231.us-east-2.compute.amaazonaws.com ping statistics ---
+4 packets transmitted, 4 received, 0% packet loss, time 3005ms
+rtt min/avg/max/mdev = 7.643/7.675/7.718/0.027 ms
+[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ top
+[?2004l[?1h=[?25l[H[J[mtop - 19:28:22 up 10 days,  2:18,  1 user,  load average: 0.00, 0.00, 0.00[m[39;49m[m[39;49m[K
+Tasks:[m[39;49m[1m 117 [m[39;49mtotal,[m[39;49m[1m   1 [m[39;49mrunning,[m[39;49m[1m 116 [m[39;49msleeping,[m[39;49m[1m   0 [m[39;49mstopped,[m[39;49m[1m   0 [m[39;49mzombie[m[39;49m[m[39;49m[K
+%Cpu(s):[m[39;49m[1m  0.0 [m[39;49mus,[m[39;49m[1m  0.0 [m[39;49msy,[m[39;49m[1m  0.0 [m[39;49mni,[m[39;49m[1m100.0 [m[39;49mid,[m[39;49m[1m  0.0 [m[39;49mwa,[m[39;49m[1m  0.0 [m[39;49mhi,[m[39;49m[1m  0.0 [m[39;49msi,[m[39;49m[1m  0.0 [m[39;49mst[m[39;49m[m[39;49m[K
+MiB Mem :[m[39;49m[1m    908.7 [m[39;49mtotal,[m[39;49m[1m    191.7 [m[39;49mfree,[m[39;49m[1m    344.0 [m[39;49mused,[m[39;49m[1m    503.9 [m[39;49mbuff/cache[m[39;49m[m [m[39;49m[m   [m[39;49m[m[39;49m[K
+MiB Swap:[m[39;49m[1m      0.0 [m[39;49mtotal,[m[39;49m[1m      0.0 [m[39;49mfree,[m[39;49m[1m      0.0 [m[39;49mused.[m[39;49m[1m    564.7 [m[39;49mavail Mem [m[39;49m[m[39;49m[K
+[K
+[7m    PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND [m[39;49m[K
+[m      1 root      20   0   25668  15900  10368 S   0.0   1.7   0:30.32 systemd [m[39;49m[K
+[m      2 root      20   0       0      0      0 S   0.0   0.0   0:00.13 kthrea+ [m[39;49m[K
+[m      3 root      20   0       0      0      0 S   0.0   0.0   0:00.00 pool_w+ [m[39;49m[K
+[m      4 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m      5 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m      6 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m      7 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m      8 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m     10 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m     13 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m     14 root      20   0       0      0      0 S   0.0   0.0   0:00.38 ksofti+ [m[39;49m[K
+[m     15 root       0 -20       0      0      0 S   0.0   0.0   0:00.41 pr/tty+ [m[39;49m[K
+[m     16 root      20   0       0      0      0 I   0.0   0.0   0:09.49 rcu_sc+ [m[39;49m[K
+[m     17 root      20   0       0      0      0 S   0.0   0.0   0:00.00 rcu_ex+ [m[39;49m[K
+[m     18 root      20   0       0      0      0 S   0.0   0.0   0:00.05 rcu_ex+ [m[39;49m[K
+[m     19 root      rt   0       0      0      0 S   0.0   0.0   0:04.51 migrat+ [m[39;49m[K
+[m     20 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kprobe+ [m[39;49m[K
+[m     21 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_i+ [m[39;49m[K
+[m     22 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/0 [m[39;49m[K
+[m     23 root      20   0       0      0      0 S   0.0   0.0   0:00.00 cpuhp/1 [m[39;49m[K
+[m     24 root     -51   0       0      0      0 S   0.0   0.0   0:00.00 idle_i+ [m[39;49m[K
+[m     25 root      rt   0       0      0      0 S   0.0   0.0   0:03.50 migrat+ [m[39;49m[K
+[m     26 root      20   0       0      0      0 S   0.0   0.0   0:00.30 ksofti+ [m[39;49m[K
+[m     28 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m     29 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kdevtm+ [m[39;49m[K
+[m     30 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m     31 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_ta+ [m[39;49m[K
+[m     32 root      20   0       0      0      0 I   0.0   0.0   0:00.00 rcu_ta+ [m[39;49m[K
+[m     33 root      20   0       0      0      0 S   0.0   0.0   0:00.00 kauditd [m[39;49m[K
+[m     34 root      20   0       0      0      0 S   0.0   0.0   0:00.45 khungt+ [m[39;49m[K
+[m     35 root      20   0       0      0      0 S   0.0   0.0   0:00.00 oom_re+ [m[39;49m[K
+[m     37 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m     39 root      20   0       0      0      0 S   0.0   0.0   1:12.73 kcompa+ [m[39;49m[K
+[m     40 root      25   5       0      0      0 S   0.0   0.0   0:00.00 ksmd    [m[39;49m[K
+[m     41 root      39  19       0      0      0 S   0.0   0.0   0:00.00 khugep+ [m[39;49m[K
+[m     42 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m     43 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K
+[m     44 root       0 -20       0      0      0 I   0.0   0.0   0:00.00 kworke+ [m[39;49m[K[?1l>[46;1H
+[34h[?25h[K[?2004h[01;32mubuntu@ip-172-31-38-74[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2026-09-27 19:28:41+00:00 [COMMAND_EXIT_CODE="0"]
